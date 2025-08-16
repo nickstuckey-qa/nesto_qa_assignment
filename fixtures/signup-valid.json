@@ -1,0 +1,10 @@
+{
+  "firstName": "Valid",
+  "lastName": "Tester",
+  "emailPrefix": "valid.tester",
+  "emailDomain": "example.com",
+  "phoneDigits": "5141234567",
+  "password": "GoodPass1234",
+  "provinceDisplay": "Quebec",
+  "provinceValue": "QC"
+}

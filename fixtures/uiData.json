@@ -1,0 +1,119 @@
+{
+  "en": {
+    "urls": { 
+      "login": "https://app.qa.nesto.ca/login",
+      "signup": "https://app.qa.nesto.ca/signup", 
+      "termsOfService": "https://www.nesto.ca/terms-of-services/",
+      "privacyPolicy": "https://www.nesto.ca/privacy-policy"
+    },
+    "images": { 
+      "nesto_header": "Nesto",
+      "nesto_secure": "Nesto Secure Encryption" 
+    },
+    "text":{
+      "createNestoAccount": "Create a nesto account",
+      "emailInstructions": "Password must be between 12 and 32 characters and contain one uppercase letter, one lowercase letter and one number.",
+      "checkBoxText": "By checking this box, you agree to be contacted by nesto’s partners for the purposes of offering you financial products. You agree to nesto sharing your mortgage information with its partners. You can opt-out at any time. Read our Privacy Policy to learn more.",
+      "footer": "By clicking on \"Create your account\", I agree and consent to the Terms of Service."
+    },
+    "labels": {
+      "firstName": "First name",
+      "lastName": "Last name",
+      "email": "Email",
+      "phone": "Mobile phone number",
+      "password": "Password",
+      "passwordConfirm": "Confirm password"
+    },
+    "buttons": {
+      "acceptCookies": "Agree and close",
+      "createAccount": "Create your account",
+      "login": "Login",
+      "language": "FR"
+    },
+    "errors": {
+      "required": "Required",
+      "tooManyChars": "Too many characters",
+      "invalidEmail": "Invalid email address",
+      "invalidPhone": "Invalid phone number",
+      "weakPassword": "Your password is too weak",
+      "mistmatchPassword": "Your password is too weak",
+      "accountExists" : "Account already exists"
+
+    },
+    "links": {
+      "login_Sign_up": "Sign up",
+      "signUp_privacyPolicy": "Privacy Policy",
+      "signUp_termsOfService": "Terms of Service"
+    },
+    "provinces": {
+      "ON": "Ontario",
+      "QC": "Quebec",
+      "AB": "Alberta",
+      "BC": "British Columbia",
+      "MB": "Manitoba",
+      "NB": "New Brunswick",
+      "NS": "Nova Scotia",
+      "NL": "Newfoundland and Labrador",
+      "PE": "Prince Edward Island",
+      "SK": "Saskatchewan"
+    }
+  },
+  "fr": {
+    "urls": { 
+      "login": "https://app.qa.nesto.ca/login",
+      "signup": "https://app.qa.nesto.ca/signup",
+      "termsOfService": "https://www.nesto.ca/fr/conditions-d-utilisation/",
+      "privacyPolicy": "https://www.nesto.ca/fr/politique-de-confidentialite" 
+    },
+      "images": { 
+      "nesto_header": "Nesto",
+      "nesto_secure": "Nesto Secure Encryption" 
+    },
+    "text":{
+      "createNestoAccount": "Créez un compte nesto",
+      "emailInstructions": "Le mot de passe doit comporter entre 12 et 32 caractères et contenir au moins une lettre majuscule, une lettre minuscule et un chiffre.",
+      "checkBoxText": "En cochant cette case, vous acceptez d’être contacté par les partenaires de nesto dans le but de vous proposer des produits financiers. Vous acceptez que nesto partage vos informations de demande hypothécaire avec ses partenaires, si nous ne sommes pas en mesure de vous fournir nos services. Vous pouvez vous désinscrire à tout moment. Voir notre politique de confidentialité pour en savoir plus.",
+      "footer": "En cliquant sur  \"Créez votre compte\", j'accepte et consens aux Conditions d'utilisation."
+    },
+    "labels": {
+      "firstName": "Prénom",
+      "lastName": "Nom de famille",
+      "email": "Courriel",
+      "phone": "Numéro de cellulaire",
+      "password": "Mot de passe",
+      "passwordConfirm": "Confirmez votre mot de passe"
+    },
+    "buttons": {
+      "acceptCookies": "Agree and close",
+      "createAccount": "Créer votre compte",
+      "login": "Connexion",
+      "language": "EN"
+    },
+    "errors": {
+      "required": "Requis",
+      "tooManyChars": "Trop de caractères",
+      "invalidEmail": "Courriel invalide",
+      "invalidPhone": "Numéro de cellulaire invalide",
+      "weakPassword": "Veuillez choisir un mot de passe plus sûr.",
+      "mistmatchPassword": "Vos mots de passe ne correspondent pas.",
+      "accountExists" : "Le compte existe déjà"
+    },
+    "links": {
+      "login_Sign_up": "Sign up",
+      "signUp_privacyPolicy": "politique de confidentialité",
+      "signUp_termsOfService": "Conditions d'utilisation"
+    },
+    "provinces": {
+      "ON": "Ontario",
+      "QC": "Québec",
+      "AB": "Alberta",
+      "BC": "Colombie-Britannique",
+      "MB": "Manitoba",
+      "NB": "Nouveau-Brunswick",
+      "NS": "Nouvelle-Écosse",
+      "NL": "Terre-Neuve-et-Labrador",
+      "PE": "Île-du-Prince-Édouard",
+      "SK": "Saskatchewan"
+    }
+  }
+}

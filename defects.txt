@@ -1,0 +1,113 @@
+ID: DEFECT-001
+Title: User creation is successful even though agreement check box hasn't been checked
+Description: If a user fills out the signup form, they can create an account without agreement to the terms.
+Steps to Reproduce:
+    1- Goto https://app.qa.nesto.ca/signup
+    2- Fill out the signup form.
+    3- Leave the agreement checkbox unchecked.
+    3- Complete the signup and click Create your Account.
+Expected Result:
+    Warning should be prompted that terms and conditions have not been accepted. No new account should be created.
+Actual Result:
+    No warning occurs. New account is created.
+Severity: Major
+    Reasoning: Compliance and legal risk issue. If users can create accounts without accepting the terms and conditions, the company may be exposed to liability.
+Priority: P0
+    Reasoning: Should be fixed immediately because it impacts legal compliance, user agreements, and could invalidate terms enforcement.
+Environment: Chrome / Firefox
+
+
+ID: DEFECT-002
+Title: Signup fields are cleared if user clicks on language toggle button.
+Description: If a user fills out the signup form, clicks on the language toggle button, they lose all their inputs / data.
+Steps to Reproduce:
+    1- Goto https://app.qa.nesto.ca/signup
+    2- Fill out the signup form with valid data, check the agreement check box.
+    3- Click on the language toggle button in top right corner.
+    4- Click on create a new account.
+Expected Result:
+    New account is created.
+Actual Result:
+    All fields are cleared leaving the used to re-enter all their data.
+Severity: Major
+    Reasoning: This is a data loss issue in the signup flow. While it doesn’t crash the application, it forces the user to re-enter all information, creating a frustrating UX and increasing abandonment rates.
+Priority: P2
+    Reasoning: Needs to be fixed soon because it’s in a key conversion path, but it’s not blocking account creation
+Environment: Chrome / Firefox
+
+
+ID: DEFECT-003
+Title: Login / Log in verbage on signup page differs in both EN and FR.
+Description: If you goto the signup page, in EN both Login and login are used, in FR both Connectez-Vous and Connexion are used.
+    For both EN and FR we should stick with one or the other and use it consistently through out the site.
+Steps to Reproduce:
+    1- Goto https://app.qa.nesto.ca/signup
+    2- In EN, top left corner you'll see Login. In FR you'll see Connexion.
+    3- At the bottom of the page under the Create Your Account button, you'll see Log In in EN, Connectez-vous in FR.
+Expected Result:
+    Consistency in verbage across the site.
+Actual Result:
+    Different words used in different places in both EN / FR.
+Severity: Minor
+    Reasoning: This is a UI/UX text consistency issue. It doesn’t affect functionality, data integrity, or system stability, but it impacts professionalism, brand consistency, and user experience.
+Priority: P3 - Should Have
+    Reasoning: Customer facing, should be addressed for consistency. 
+Environment: Chrome / Firefox
+
+
+ID: DEFECT-004
+Title: No minimum length for phone number.
+Description: Currently theres no minimum phone number length. Making it 10 digits would reduce invalid data from being entered into the system.
+Steps to Reproduce:
+    1- Goto https://app.qa.nesto.ca/signup
+    2- Fill out the signup form.
+    3- For the phone field, enter a small phone number ie; 123
+    3- Complete the signup and click Create your Account.
+Expected Result:
+    Account creation should fail, error message indicating invalid phone number should be issues.
+Actual Result:
+    Account is successfully created without issue.
+Severity: Major
+    Reasoning: It’s in a core signup field, impacts data integrity, and can result in bad customer data entering the system.
+         While it doesn’t crash the app, the defect affects a primary business function and will cause downstream operational issues
+Priority: P2 - Must Have
+    Reasoning: Not immediately blocking all signups, but should be fixed in the next release cycle to prevent more bad data.
+Environment: Chrome / Firefox
+
+
+ID: DEFECT-005
+Title: Digits shouldn't be allowed in firstname lastname text fields.
+Description: Digits and various special characters are allowed in the first and last name fields
+Steps to Reproduce:
+    1- Goto https://app.qa.nesto.ca/signup
+    2- Fill out the signup form.
+    3- Use special characters (other than hyphens, apostrophes, and spaces) as well as numbers in the name fields, both first and last.
+    3- Complete the signup and click Create your Account.
+Expected Result:
+    Account creation should fail, error message indicating invalid characters used in the name fields should be issues.
+Actual Result:
+    Account is successfully created without issue.
+Severity: Major
+    Reasoning: This is a core data validation issue in the signup flow. Allowing numbers and arbitrary special characters in names can lead to data integrity problems in customer records, issues with downstream systems. 
+Priority: P2 - Must Have
+    Reasoning: Should be fixed in the next release to prevent further bad data. Not immediately blocking signups, so not P1, but high enough to schedule quickly.
+Environment: Chrome / Firefox
+
+
+ID: DEFECT-006
+Title: British Colombia shouldn't have a - in EN in the province pull down.
+Description: Pull down list on signup page in EN has British-Colombia. It's a typo / mispelled. 
+Steps to Reproduce:
+    1- Goto https://app.qa.nesto.ca/signup
+    2- Goto the provinces pulled down menu.
+    3- You can see that British-Columbia is has a - where there shouldn't be one.
+Expected Result:
+    British Columbia
+Actual Result:
+    British-Columbia
+Severity: Miunor
+    Reasoning: Simple cosmetic typo.
+Priority: P4 - May Have
+    Reasoning: Simple cosmetic typo.
+Environment: Chrome / Firefox
+
